@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Frentea Laope</h2>
+
+<p>Pon tu Clave Pa Ve</p>
+
+<input id="habla">
+
+
+<button type="button" onclick="myFunction()">Manda</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+  var z = document.createElement("IMG");
+  z.setAttribute("src", "miles.jpg");
+  z.setAttribute("width", "100");
+  z.setAttribute("height", "100");
+  z.setAttribute("alt", "Spiderman");
+  var y = document.createElement("IMG");
+  y.setAttribute("src", "shield.jpg");
+  y.setAttribute("width", "100");
+  y.setAttribute("height", "100");
+  y.setAttribute("alt", "shield");
+  
+
+ 
+  x = document.getElementById("habla").value;
+
+  
+  if ( x === "Zlayer") {
+    text = "Izz Manito" ;
+	document.body.appendChild(z);  
+
+  } else {
+    text = "Dale De Aqui";
+	document.body.appendChild(y);
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
